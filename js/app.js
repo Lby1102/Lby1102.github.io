@@ -10,7 +10,7 @@ import { renderSidebar } from './components/sidebar.js';
 import { renderContent } from './components/content.js';
 
 async function init() {
-  const res     = await fetch('./data/profile.json');
+  const res     = await fetch('./data/profile.json', { cache: 'no-cache' });
   const profile = await res.json();
 
   document.title = `${profile.name} - 个人简历`;

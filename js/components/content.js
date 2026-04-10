@@ -15,11 +15,12 @@ export function renderContent(profile) {
 }
 
 function renderAbout(text) {
-  const html = Array.isArray(text) ? text.join('<br>') : text.replace(/\n/g, '<br>');
+  const items = Array.isArray(text) ? text : text.split('\n');
+  const rows = items.map(line => `<li>${line}</li>`).join('');
   return `
     <section class="card" id="about">
       <h2 class="section-title">关于我</h2>
-      <p>${html}</p>
+      <ul class="tag-list">${rows}</ul>
     </section>
   `;
 }
