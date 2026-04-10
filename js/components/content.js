@@ -9,7 +9,6 @@ export function renderContent(profile) {
     <div class="content">
       ${renderAbout(profile.about)}
       ${renderExperience(profile.experience)}
-      ${renderAwards(profile.awards)}
       ${renderInterests(profile.interests)}
     </div>
   `;
@@ -48,21 +47,6 @@ function renderExperience(items) {
   `;
 }
 
-function renderAwards(items) {
-  const rows = items.map(a => `
-    <li>
-      <span class="award-name">${a.name}</span>
-      <span class="award-date">${a.year}</span>
-    </li>
-  `).join('');
-
-  return `
-    <section class="card" id="awards">
-      <h2 class="section-title">荣誉与奖项</h2>
-      <ul class="award-list">${rows}</ul>
-    </section>
-  `;
-}
 
 function renderInterests(items) {
   const tags = items.map(i => `<span class="tag">${i}</span>`).join('');
