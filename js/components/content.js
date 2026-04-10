@@ -16,7 +16,7 @@ export function renderContent(profile) {
 }
 
 function renderAbout(text) {
-  const html = text.replace(/\n/g, '<br>');
+  const html = Array.isArray(text) ? text.join('<br>') : text.replace(/\n/g, '<br>');
   return `
     <section class="card" id="about">
       <h2 class="section-title">关于我</h2>
