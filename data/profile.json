@@ -1,0 +1,48 @@
+{
+  "name": "刘博远",
+  "initials": "LBY",
+  "title": "SAI 2025 级新生",
+  "studentId": "125090408",
+  "contact": {
+    "email": "your@email.com",
+    "github": "https://github.com/Lby1102",
+    "linkedin": "",
+    "phone": ""
+  },
+  "about": "你好！我是刘博远，SAI 2025 级本科新生。对人工智能、软件工程充满热情，正在积极探索各类技术方向，期待在学习中不断成长。",
+  "education": [
+    {
+      "school": "某某大学",
+      "degree": "本科在读",
+      "department": "SAI 学院",
+      "start": "2025",
+      "end": "至今"
+    }
+  ],
+  "skills": [
+    { "name": "Python",    "level": 60 },
+    { "name": "Java",      "level": 40 },
+    { "name": "HTML / CSS","level": 50 }
+  ],
+  "languages": [
+    { "name": "中文", "proficiency": "母语" },
+    { "name": "英语", "proficiency": "流利" }
+  ],
+  "experience": [
+    {
+      "title": "项目名称",
+      "role": "角色",
+      "org": "所在组织",
+      "start": "2025.xx",
+      "end": "2025.xx",
+      "bullets": [
+        "负责 XX 模块的设计与实现",
+        "使用 Python / Java 完成 YY 功能"
+      ]
+    }
+  ],
+  "awards": [
+    { "name": "奖项名称", "year": "2025" }
+  ],
+  "interests": ["编程", "阅读", "摄影"]
+}

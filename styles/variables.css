@@ -1,0 +1,37 @@
+/* ================================================
+   Design Tokens — edit here to retheme the whole site
+================================================ */
+:root {
+  /* Brand colors */
+  --color-primary:        #2563eb;
+  --color-primary-light:  #dbeafe;
+  --color-primary-dark:   #1e3a8a;
+
+  /* Neutrals */
+  --color-text:           #1e293b;
+  --color-muted:          #64748b;
+  --color-border:         #e2e8f0;
+  --color-bg:             #f8fafc;
+  --color-card:           #ffffff;
+
+  /* Spacing scale */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 60px;
+
+  /* Typography */
+  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --text-xs:   .75rem;
+  --text-sm:   .85rem;
+  --text-base: .97rem;
+  --text-lg:   1.05rem;
+  --text-2xl:  2.2rem;
+
+  /* Surfaces */
+  --radius:   12px;
+  --shadow:   0 1px 4px rgba(0, 0, 0, .08);
+}

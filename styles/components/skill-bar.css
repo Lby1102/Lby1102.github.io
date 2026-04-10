@@ -1,0 +1,31 @@
+/* ================================================
+   Component: Skill Bar
+   Covers: .skill-list, .skill-item, .skill-name,
+           .skill-bar, .skill-fill
+================================================ */
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-name {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.skill-bar {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 99px;
+}

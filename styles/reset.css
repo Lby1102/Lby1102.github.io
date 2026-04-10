@@ -1,0 +1,34 @@
+/* ================================================
+   Reset & Base Typography
+   Only global element defaults — no layout, no components
+================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+ul { list-style: none; }
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p { font-size: var(--text-base); }

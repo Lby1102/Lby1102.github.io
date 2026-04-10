@@ -1,0 +1,15 @@
+/* ================================================
+   main.css — entry point, @import only
+   Edit individual files, not here.
+================================================ */
+
+@import "./variables.css";
+@import "./reset.css";
+@import "./layout.css";
+
+@import "./components/hero.css";
+@import "./components/card.css";
+@import "./components/entry.css";
+@import "./components/skill-bar.css";
+@import "./components/tag.css";
+@import "./components/award.css";

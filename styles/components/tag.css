@@ -1,0 +1,32 @@
+/* ================================================
+   Component: Tags & simple lists
+   Covers: .tag-row, .tag, .tag-list
+================================================ */
+
+/* Inline chip tags (e.g. Interests) */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.tag {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: 99px;
+  padding: var(--space-xs) 14px;
+  font-size: .82rem;
+  font-weight: 500;
+}
+
+/* Vertical plain list (e.g. Languages) */
+.tag-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tag-list li {
+  font-size: var(--text-sm);
+  color: #334155;
+}
