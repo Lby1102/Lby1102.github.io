@@ -17,8 +17,8 @@
     "获得全免奖学金、思廷二等学科奖学金"
   ],
   "skills": [
-    { "name": "MAT1012荣誉微积分", "url": "" },
-    { "name": "MAT2042荣誉线性代数", "url": "" },
+    { "name": "MAT1012荣誉微积分"},
+    { "name": "MAT2042荣誉线性代数"},
     {"name":"AIE1902\n进行了transformer数学模型、agent搭建、fine-tuning等基础学习"},
     {"name":"Gilbert线性代数公开课"},
     { "name": "凌青-中科大线性代数公开课" },
