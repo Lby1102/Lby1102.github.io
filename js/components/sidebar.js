@@ -15,10 +15,13 @@ export function renderSidebar(profile) {
 function renderSkills(items) {
   const rows = items.map(item => {
     const hasUrl = item.url && item.url.trim() !== '';
-    const link = hasUrl
-      ? `<a href="${item.url}" class="skill-url" target="_blank" rel="noopener">↗</a>`
+    const urlLine = hasUrl
+      ? `<a href="${item.url}" class="skill-url-text" target="_blank" rel="noopener">${item.url}</a>`
       : '';
-    return `<li class="skill-entry"><span>${item.name}</span>${link}</li>`;
+    return `<li class="skill-entry">
+      <span class="skill-entry-name">${item.name}</span>
+      ${urlLine}
+    </li>`;
   }).join('');
 
   return `
