@@ -72,22 +72,34 @@
 .contact-row {
   margin-top: var(--space-md);
   display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: var(--text-sm);
+}
+
+.contact-label {
+  color: var(--color-muted);
+  min-width: 3.5em;
+  flex-shrink: 0;
+}
+
+.contact-label::after {
+  content: '：';
 }
 
 .contact-link {
-  font-size: var(--text-sm);
-  color: var(--color-muted);
+  color: var(--color-ink);
   border-bottom: 1px solid #ddd;
   padding-bottom: 1px;
 }
 
 .contact-link:hover {
   text-decoration: none;
-  color: var(--color-ink);
   border-color: var(--color-ink);
 }
-
-.sep { color: #ccc; }

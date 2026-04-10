@@ -8,12 +8,12 @@ export function renderHero(profile) {
   const { name, initials, title, studentId, contact } = profile;
 
   const links = [];
-  if (contact.email)    links.push(`<a href="mailto:${contact.email}" class="contact-link">${contact.email}</a>`);
-  if (contact.github)   links.push(`<a href="${contact.github}" class="contact-link" target="_blank" rel="noopener">GitHub</a>`);
-  if (contact.linkedin) links.push(`<a href="${contact.linkedin}" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>`);
-  if (contact.phone)    links.push(`<a href="tel:${contact.phone}" class="contact-link">${contact.phone}</a>`);
+  if (contact.email)    links.push(`<span class="contact-item"><span class="contact-label">邮箱</span><a href="mailto:${contact.email}" class="contact-link">${contact.email}</a></span>`);
+  if (contact.github)   links.push(`<span class="contact-item"><span class="contact-label">GitHub</span><a href="${contact.github}" class="contact-link" target="_blank" rel="noopener">${contact.github.replace('https://github.com/', '')}</a></span>`);
+  if (contact.linkedin) links.push(`<span class="contact-item"><span class="contact-label">LinkedIn</span><a href="${contact.linkedin}" class="contact-link" target="_blank" rel="noopener">${contact.linkedin}</a></span>`);
+  if (contact.phone)    links.push(`<span class="contact-item"><span class="contact-label">电话</span><a href="tel:${contact.phone}" class="contact-link">${contact.phone}</a></span>`);
 
-  const contactHTML = links.join('<span class="sep">·</span>');
+  const contactHTML = links.join('');
 
   return `
     <div class="container">
